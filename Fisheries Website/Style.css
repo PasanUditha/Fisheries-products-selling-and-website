@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: radial-gradient( circle 588px at 31.7% 40.2%, rgba(225, 200, 239, 0.2) 21.4%, rgba(163, 225, 233, 0.2) 57.1%);
+}
+
+.wrapper {
+    margin: auto;
+}
+
+.nav-area {
+    float: right;
+    list-style: none;
+}
+
+header {
+    height: 20vh;
+}
+
+.title {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #3b5998;
+    font-size:350%;
+}
+
+.motto{
+    font-size: 140%;
+}
+
+.nav-area li {
+    display: inline-block;
+    padding: 0.4rem;
+    background-color: #222;
+    color: #eee;
+    border-radius: 0.4rem;
+    transition: all 0.3s ease-in;
+}
+
+.nav-area li:hover {
+    box-shadow: 0 0 20px #96a2b2;
+}
+
+.nav-area li a {
+    transition: all 0.3s ease-in;
+    color: #eee;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: poppins;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.nav-area li a:hover {
+    color: #fff;
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    width: 100%;
+}
+
+img{
+	object-fit: cover;
+
+}
+
+/*resposive*/
+
+@media (max-width:600px) {
+    .wrapper {
+        width: 100%;
+    }
+    .logo {
+        float: none;
+        width: 50%;
+        text-align: center;
+        margin: auto;
+    }
+    img {
+        width: 100%;
+    }
+    .nav-area {
+        float: none;
+        margin-top: 0;
+    }
+    .nav-area li a {
+        padding: 5px;
+        font-size: 11px;
+    }
+    .nav-area {
+        text-align: center;
+    }
+    .welcome-text {
+        width: 100%;
+        height: auto;
+        margin: 30% 0;
+    }
+    .welcome-text h1 {
+        font-size: 30px;
+    }
+}
+
+
+/* //////////////////////////////////// */
+
+
+/* //Login */
+
+
+/* /////////////////////////////////////// */
+
+.section {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    width: 100%;
+}
+
+.section img {
+    max-width: 28vw;
+}
+
+.login {
+    width: 25vw;
+    height: 70vh;
+    margin: 3rem;
+    padding: 3rem;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    color: #26272b;
+    box-shadow: 0 0 40px #bcbed1;
+}
+
+.login>* {
+    margin-bottom: 2rem;
+}
+
+.login input,
+.login button {
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    background-color: #ededed;
+    color: #26272b;
+    border: 5px transparent solid;
+}
+
+.login input:hover .login,
+button:hover {
+    box-shadow: 0 0 10px 5px #ddd;
+}
+
+
+/* //////////////////////////////////// */
+
+
+/* //footer */
+
+
+/* /////////////////////////////////////// */
+
+.site-footer {
+    background-color: #272829;
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #737373;
+}
+
+.site-footer hr {
+    border-top-color: #bbb;
+    opacity: 0.5
+}
+
+.site-footer hr.small {
+    margin: 20px 0
+}
+
+.site-footer h6 {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    letter-spacing: 2px
+}
+
+.site-footer a {
+    color: #737373;
+}
+
+.site-footer a:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.footer-links {
+    padding-left: 0;
+    list-style: none
+}
+
+.footer-links li {
+    display: block
+}
+
+.footer-links a {
+    color: #737373
+}
+
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.footer-links.inline li {
+    display: inline-block
+}
+
+.site-footer .social-icons {
+    text-align: right
+}
+
+.text-justify {
+    margin-bottom: 0.2rem;
+}
+
+.site-footer .social-icons a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 6px;
+    margin-right: 0;
+    border-radius: 100%;
+    background-color: #33353d
+}
+
+.copyright-text {
+    margin: 0
+}
+
+@media (max-width:991px) {
+    .site-footer [class^=col-] {
+        margin-bottom: 30px
+    }
+}
+
+@media (max-width:767px) {
+    .site-footer {
+        padding-bottom: 0
+    }
+    .site-footer .copyright-text,
+    .site-footer .social-icons {
+        text-align: center
+    }
+}
+
+.social-icons {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-bottom: 4px
+}
+
+.social-icons li.title {
+    margin-right: 15px;
+    text-transform: uppercase;
+    color: #96a2b2;
+    font-weight: 700;
+    font-size: 13px
+}
+
+.social-icons a {
+    background-color: #eceeef;
+    color: #818a91;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear
+}
+
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+    color: #fff;
+    background-color: #29aafe
+}
+
+.social-icons.size-sm a {
+    line-height: 34px;
+    height: 34px;
+    width: 34px;
+    font-size: 14px
+}
+
+.social-icons a.facebook:hover {
+    background-color: #3b5998
+}
+
+.social-icons a.twitter:hover {
+    background-color: #00aced
+}
+
+.social-icons a.linkedin:hover {
+    background-color: #007bb6
+}
+
+.social-icons a.instagram:hover {
+    background-color: #ea4c89
+}
+
+.sign-up-form input {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #333;
+    color: #96a2b2;
+    border: 2px transparent solid;
+}
+
+.sign-up-form input:hover {
+    border: 2px #00aced solid;
+    box-shadow: 0 0 10px 5px #26272b;
+}
+
+.sign-up-form button {
+    color: #96a2b2;
+    background-color: #333;
+    border: 2px transparent solid;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.sign-up-form button:hover {
+    border: 2px #00aced solid;
+    box-shadow: 0 0 10px 5px #26272b;
+}
+
+.sign-up-form {
+    margin-top: 0.5rem;
+}
+
+@media (max-width:767px) {
+    .social-icons li.title {
+        display: block;
+        margin-right: 0;
+        font-weight: 600
+    }
+}

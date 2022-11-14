@@ -1,0 +1,353 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+      <!-- CSS only -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+      <meta charset="UTF-8">
+      <title>How to Create responsive Homepage</title>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+  
+      <!-- font awesome cdn -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 30%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 10px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card  {
+  
+  background-color: rgb(218, 198, 198);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  border-style: solid;  
+}
+
+ input[type=submit] {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px 60px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.price {
+  color: blue;
+  font-size: 22px;
+}
+
+
+</style>
+</head>
+<body>
+  <header class="container pt-3">
+    <div class="logo text-black">
+        <h3 class="text-black fw-bold">FISHERIES</h3>
+    </div>
+    <ul class="nav-area">
+        <li><a href="Hello.html">Home</a></li>
+        <li><a href="Finz.html">Signup</a></li>
+        <li><a href="shop.html">Store</a></li>
+        <li><a href="NewsPage.html">News</a></li>
+        <li><a href="AboutUS.html">About</a></li>
+        <li><a href="1.html">Chat</a></li>
+        <li><a href="Chatpage.html">Inqueiry</a></li>
+    </ul>
+</header>
+
+<div>
+
+</div>
+
+  <p><font face = "ALGERIAN" size = "+4" color = "black">
+    <center><b>Fish & Fish Equipments</b></center>
+ </font>
+</p>
+
+<p><font face = "ALGERIAN" size = "+3" color = "black">
+  <b>Fishes</b>
+ </font>
+ </p>
+
+
+
+
+
+
+
+<div>
+<form action="shop.php" method="post">
+
+    
+  <div class="column">
+    
+    <div class="card">
+    <img src="o1.gif"  style="width:100%">
+        <h1> Place Your Order </h1>
+        
+        <label for="namec">Customer</label>
+        <input
+          type="text"
+          class="form-control"
+          id="namec"
+          name="namec"
+          required
+          placeholder="Your Name with initials"
+          
+        />
+
+        <label for="nic">NIC&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input
+          type="text"
+          class="form-control"
+          id="nic"
+          name="nic"
+          required
+          placeholder="Require 10 Characters"
+        
+        />
+
+        <label for="address">Address&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input
+          type="text"
+          class="form-control"
+          id="address"
+          name="address"
+          required
+          placeholder="Delivery Location"
+        
+        />
+
+       
+
+        
+        <label for="namee">Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input
+          type="text"
+          class="form-control"
+          id="namee"
+          name="namee"
+          required
+          placeholder="Fish Name or Tool Name"
+        
+        />
+       
+        
+        
+         <label for="quantity">Quantity&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input
+          type="text"
+          class="form-control"
+          id="quantity"
+          name="quantity"
+          required
+          placeholder="Fish(Kg) or Tool(Number)"
+          
+        />
+        <br><br>
+        
+        
+        <input type="submit" name="create" value="Order">
+    
+  </div>
+  </div>
+  </form>
+  </div>
+ 
+
+  <div class="column">
+    
+    <div class="card">
+        <img src="l3.jpg" style="width:100%">
+        <h1>Lobster</h1>
+        <p class="price">1 Kg = Rs.800.00</p>
+        <p color="red">Pay cash from credit cards for free delivery.Order more than 3Kg for get discounts.</p>
+        
+        
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+        <img src="sp3.jpg"  style="width:100%">
+        <h1>Spanish Mackerel</h1>
+        <p class="price">1 Kg = Rs.500.00</p>
+        <p color="red">Pay cash from credit cards for free delivery.Stock outing soon. Order soon!!!!</p>
+        
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+        <img src="s6.jpg"  style="width:100%">
+        <h1>Sail Fish</h1>
+        <p class="price">1 Kg = Rs.800.00</p>
+        <p color="red">Pay cash from debit cards for free delivery.No discounts available for this. </p>
+        
+    </div>
+  </div>
+
+  
+  
+
+    <div class="column">
+      <div class="card">
+          <img src="s7.jpg"  style="width:100%">
+          <h1>Sword fish</h1>
+          <p class="price">1 Kg = Rs.800.00</p>
+          <p color="red">Pay cash from credit or debit cards for free delivery.Order more than 5Kg for get discounts.</p>
+          
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+          <img src="b1.jpg"  style="width:100%">
+          <h1>Blue Shark</h1>
+          <p class="price">1 Kg = Rs.600.00</p>
+          <p color="red">Pay cash from credit cards for free delivery.Order more than 5Kg for get a 10% discount.</p>
+          
+      </div>
+    </div>
+
+    
+
+    
+
+</div>
+<h1>***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************
+  </h1>
+
+
+<p><font face = "ALGERIAN" size = "+3" color = "black">
+  <b>Fishing Equipments</b>
+ </font>
+ </p>
+
+ <div class="row">
+ <div class="column">
+      <div class="card">
+      <img src="e3.jpg"  style="width:100%">
+        <h1>Bobbers</h1>
+        <p class="price">10 = Rs.800.00</p>
+        <p color="red">You must order at least 10.</p>
+        
+     
+      </div>
+    </div>
+
+
+ 
+  <div class="column">
+    <div class="card">
+        <img src="e11.jpg"  style="width:100%">
+        <h1> Fishine Line </h1>
+       <p class="price">5 rolls = Rs.500.00</p>
+        <p color="red">Pay cash from credit or debit cards for free delivery.You must order at least 5.</p>
+        
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+        <img src="e2.jpg" style="width:100%">
+        <h1>Hooks</h1>
+        <p class="price">5 = Rs.300.00</p>
+        <p color="red">Pay cash from credit cards for free delivery.You must order at least 5 pieces.</p>
+        
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+    <img src="e5.jpg"  style="width:100%">
+        <h1> Swivels </h1>
+       <p class="price">1  = Rs.150.00</p>
+        <p color="red">Pay cash from credit cards for free delivery.Order more than 5 for get a discount.</p>
+        
+    </div>
+  </div>
+  
+  
+  <div class="column">
+    <div class="card">
+        <img src="e44.png"  style="width:100%">
+        <br><br><br>
+        <h1>Sinkers</h1>
+        <p class="price">5 = Rs.400.00</p>
+        <p color="red">Pay cash from credit cards for free delivery.At least order 5.</p>
+        
+    </div>
+  </div>
+
+
+  
+  
+
+   
+
+    <div class="column">
+      <div class="card">
+          <img src="e66.jpg"  style="width:100%">
+          <h1>Rods & Reels</h1>
+          <p class="price">1  = Rs.300.00</p>
+        <p color="red">Pay cash from credit or debit cards for free delivery.Order more than 2 for get a discount.</p>
+        
+      </div>
+    </div>
+
+    
+
+    
+
+</div>
+
+<style>
+  body {
+    background-image: url('o3.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+  </style>
+   
+
+</body>
+</html>

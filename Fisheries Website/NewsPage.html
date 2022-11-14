@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+      <!-- CSS only -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+      <meta charset="UTF-8">
+      <title>How to Create responsive Homepage</title>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+  
+      <!-- font awesome cdn -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #5969f8;
+  background-image: url('o3.gif');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.column2 {
+  float: left;
+  width: 50%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.column3 {
+  float: left;
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 25px 14px 0 rgba(0, 0, 0, 0.2);
+  background-color: #f5f5f5;
+  margin: 25px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: left;
+  background-color: #91d2f0;
+  color: rgb(0, 0, 0);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title1 {
+  color: rgb(91, 91, 238);
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: rgb(102, 64, 241);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+      <header class="container pt-3">
+        <div class="logo text-black">
+            <h3 class="text-black fw-bold">FISHERIES</h3>
+        </div>
+        <ul class="nav-area">
+            <li><a href="#">Home</a></li>
+            <li><a href="Finz.html">Signup</a></li>
+            <li><a href="shop.html">Store</a></li>
+            <li><a href="NewsPage.html">News</a></li>
+            <li><a href="AboutUS.html">About</a></li>
+            <li><a href="1.html">Chat</a></li>
+            <li><a href="Chatpage.html">Inqueiry</a></li>
+        </ul>
+    </header>
+
+<div class="about-section">
+  <h1>News And Annoucements</h1>
+  <p>Day today Updated news.</p>
+  <p>All the annocements of this website will published here</p>
+  <p>In this section news related to fisheries will published</p>
+</div>
+
+<h2 style="text-align:center" >News Section <colour ="white"></h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="2.webp" alt="Pasan" style="width:100%">
+      <div class="container">
+        <h2>Swedish plant-based seafood startup lands major investment</h2>
+        <p class="title1">Hooked Foods, which launched its vegan tuna product, Toonish, into Swedish retail earlier this month, has raised €3.8 million.</p>
+        <p>The new funds will be used to accelerate product innovation, such as the launch of the plant-based salmon that startup is currently developing, which Hooked claims will be the first vegan shredded salmon on the market.
+
+          Founded in 2019, Hooked Foods is on a mission to counteract overfishing and the associated sustainability issues created in the conventional fishing industry.</p>
+          
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="3.jpg" alt="news2" style="width:100%">
+      <div class="container">
+        <h2>One Indonesian industry has boomed during the pandemic: seaweed farming
+        </h2>
+        <p class="title1">Satellite data reveals increased seaweed production during the COVID-19 pandemic</p>
+        <p>When COVID-19 hit Indonesia, it devastated industries such as fisheries.
+           However, one sector has gone against the trend: seaweed farming.          
+                             
+          There is a range of possible reasons for this change, including environmental conditions, farming practices and the impacts of COVID-19.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="4.webp" alt="news3" style="width:100%">
+      <div class="container">
+        <h2>Cargill steps up research into RAS-specific aquafeeds</h2>
+        <p class="title1">The Freshwater Institute and Cargill have announced a multi-year agreement to develop, evaluate and enhance feeds for the growing land-based aquaculture industry.</p>
+        <p>The Conservation Fund’s Freshwater Institute, which focuses on R&D relating to recirculating aquaculture systems (RAS), has teamed up with the animal feed giant, following recent efforts between the two groups that validated the effectiveness of Cargill’s new diet for Atlantic salmon grown in land-based RAS. The partners started working together in 2018, and this new agreement solidifies the collaboration through 2023 and beyond.</p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2 style="text-align:center">Weather Report</h2>
+<div class="row">
+  <div class="column2">
+    <div class="card">
+      <img src="8.jfif" alt="Weather1" style="width:100%">
+      <div class="container">
+        <h2>Hurricane Sam serves up stunning sights over the open Atlantic</h2>
+        <p class="title1">The ferocious cyclone remains far away from where it could directly strike land. This has allowed weather enthusiasts and even casual observers to marvel at the intrinsic beauty of one of the most powerful natural forces on Earth.</p>
+        <p>Over the course of its lengthy lifetime, Hurricane Sam has generated some spectacular satellite imagery. From rapid intensification to eyewall replacement cycles, global satellites have provided a window into the lifecycle of a massive tropical cyclone that's thousands of miles away at sea -- one of Mother Nature's most powerful forces.</p>
+      </div>
+    </div>
+  </div>
+  <div class="column2">
+    <div class="card">
+      <img src="7.gif" alt="Weather1" style="width:100%">
+      <div class="container">
+        <h2>Most powerful storm on Earth to kick up rough seas, but otherwise spare US</h2>
+        <p class="title1">Hurricane Sam's epic Atlantic journey continues after an eyewall replacement cycle -- and it will make its presence felt in the U.S. with stormy seas and, potentially, coastal flooding.</p>
+        <p>As of early Wednesday morning, Hurricane Sam was the most powerful storm on the planet. The major Category 4 hurricane, packing 130-mph maximum sustained winds, was churning 455 miles to the east of the northern Leeward Islands and moving northwestward at 9 mph.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2 style="text-align:center">Annoucements</h2>
+<div class="row">
+  <div class="column3">
+    <div class="card">
+      <img src="11.gif" alt="Annocement1" style="width:100%">
+      <div class="container">
+        <h2>website Maintance</h2>
+        <p class="title1">There will be website maintaince in nexxt week 20th Octomber 2021</p>
+        <p>This maintanace is for update our website Database to new vertion becouse of that above mentioned date the site will be Dowwn</p>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+</body>

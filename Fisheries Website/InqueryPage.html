@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <meta charset="UTF-8">
+        <title>How to Create responsive Homepage</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    
+        <!-- font awesome cdn -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+    <title>
+        Communcation Page
+    </title>
+ 
+    <style>
+ 
+        /* Styling the Body element i.e. Color,
+        Font, Alignment */
+        body {
+            background-color: #6c85f5;
+            background-image: url('o3.gif');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            font-family: Verdana;
+            text-align: center;
+        }
+ 
+        /* Styling the Form (Color, Padding, Shadow) */
+        form {
+            background-color: rgb(175, 201, 216);
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+ 
+        /* Styling form-control Class */
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+ 
+        /* Styling form-control Label */
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+ 
+        /* Styling form-control input,
+        select, textarea */
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+ 
+        /* Styling form-control Radio
+        button and Checkbox */
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+ 
+        /* Styling Button */
+        button {
+            background-color: #d8e9e7;
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+  
+<body>
+
+    <header class="container pt-3">
+        <div class="logo text-black">
+            <h3 class="text-black fw-bold">FISHERIES</h3>
+        </div>
+        <ul class="nav-area">
+            <li><a href="Hello.html">Home</a></li>
+            <li><a href="Finz.html">Signup</a></li>
+            <li><a href="shop.html">Store</a></li>
+            <li><a href="NewsPage.html">News</a></li>
+            <li><a href="AboutUS.html">About</a></li>
+            <li><a href="1.html">Chat</a></li>
+            <li><a href="Chatpage.html">Inqueiry</a></li>
+        </ul>
+    </header>
+    <h1>Customers Issue Submission Page</h1>
+    <form action="connect.php" method="post">
+    <!-- Create Form -->
+    <form id="form">
+ 
+        <!-- Details -->
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Name
+                
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="name"
+                   placeholder="Enter your name" name="name"
+                   required/>
+        </div>
+  
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Email
+            </label>
+ 
+            <!-- Input Type Email-->
+            <input type="email"
+                   id="email"
+                   placeholder="Enter your email" name="email"
+                   required/>
+        </div>
+
+        <div class="form-control">
+            <label for="Product ID" id="label-Product ID">
+                Product ID
+            </label>
+ 
+            <!-- Input Type Product ID-->
+            <input type="Product ID"
+                   id="Product ID"
+                   placeholder="Enter Product ID" name="ProductID"
+                   required/>
+        </div>
+
+        <div class="form-control">
+            <label for="Seller ID" id="Seller ID">
+                Seller ID
+            </label>
+ 
+            <!-- Seller ID-->
+            <input type="Seller ID"
+                   id="Seller ID"
+                   placeholder="Enter Seller ID" name="SellerID"
+                   required/>
+        </div>
+  
+        </div>
+  
+        <div class="form-control">
+            <label for="role" id="label-role">
+                Select the Inqury Catagory
+            </label>
+             
+            <!-- Dropdown options -->
+            <select name="role" id="role" required>
+                <option value="Fish Product" name="Product">Product Inquery</option>
+                <option value="Fish Equipment product" name="Product">Website Inquery</option>
+            </select>
+        </div>
+  
+        <div class="form-control">
+            <label>
+                At what time Seller can contact you
+            </label>
+ 
+            <!-- Input Type Radio Button -->
+            <label for="recommed-1">
+                <input type="radio"
+                       id="recommed-1"
+                       name="day" value="Weekday" required>Weekday</input>
+                       
+            </label>
+            <label for="recommed-2">
+                <input type="radio"
+                       id="recommed-2"
+                       name="day" value="Weekend" required>Weekend</input>
+            </label>
+        </div>
+  
+  
+        <!-- Multi-line Text Input Control -->
+        <button type="submit" value="submit">
+            
+            Submit
+        </button>
+    </form>
+</body>
+  
+</html>

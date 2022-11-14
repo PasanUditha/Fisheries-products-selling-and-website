@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>How to Create responsive Homepage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font awesome cdn -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="container pt-3">
+        <div class="logo text-black">
+            <h3 class="text-black fw-bold">FISHERIES</h3>
+        </div>
+        <ul class="nav-area">
+            <li><a href="#">Home</a></li>
+            <li><a href="Registration.html">Signup</a></li>
+            <li><a href="ShopPage.html">Store</a></li>
+            <li><a href="NewsPage.html">News</a></li>
+            <li><a href="AboutUS.html">About</a></li>
+            <li><a href="ChatPage.html">Chat</a></li>
+            <li><a href="InqueryPage.html">Inqueiry</a></li>
+        </ul>
+    </header>
+
+    <div class="text-center my-3">
+        <h1 class="fw-bold title">Fisheries Fish Marketing</h1>
+        <p class="fw-bolder text-muted text-wrap motto"> We are providing the best fish related solutions in the country</p>
+    </div>
+
+    <div class="section container justify-content-between">
+        <div class="d-flex flex-column align-content-center p-1 justify-content-center">
+            <h4 class="fw-bold">Just signin today and start shopping!</h4>
+            <p class="text-muted">Best place to buy fish related products</p>
+            <p class="text-muted">Sign in and start browsing today!</p>
+            <img src="fish-ocean.png" class="shaodw-1-strong rounded-2" height="300px" width="600px" alt="">
+        </div>
+        <form class="login">
+            <h4>Let's Connect</h4>
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <p class="text-danger">HI! </p>
+            <button>Login</button>
+        </form>
+    </div>
+
+
+    <div class="section d-flex px-2 align-items-center gap-5 container my-5">
+        <div class="left d-flex flex-column gap-3">
+            <h4 class="fw-bold">Find the best fish species and equipments in one place!</h4>
+            <p class="text-muted">We have fish in stock that are hard to find and there is a great diversity in the product availability. There are so many fish equipments also availabe in our store. Grab them today!</p>
+            <button class="btn btn-dark rounded-pill" style="max-width: fit-content;">Access Our Store</button>
+        </div>
+        <div class="right">
+            <img src="Shopping-img.jpg" class="shaodw-1-strong rounded-2" height="200px" width = "700px"alt="">
+        </div>
+    </div>
+
+
+
+    <div class="section d-flex px-2 align-items-center flex-row-reverse gap-5 container my-5">
+        <div class="left d-flex flex-column gap-3">
+            <h4 class="fw-bold">Checkout our news feed to get latest news!</h4>
+            <p class="text-muted">Newely added things, out of stock notices and website maintenence information available here!</p>
+            <button class="btn btn-dark rounded-pill" style="max-width: fit-content;">News Feed</button>
+        </div>
+        <div class="right">
+            <img src="News-image.jpg" class="shaodw-1-strong rounded-2" height="300px" width="400px" alt="">
+        </div>
+    </div>
+
+
+    <div class="section d-flex px-2 align-items-center gap-5 container my-5">
+        <div class="left d-flex flex-column gap-3">
+            <h4 class="fw-bold">Find the nearest store location and grab your item today!</h4>
+            <p class="text-muted">Our main branch is situated at Panadura, and so many sub branches are situated around the country including Kalutara, matara, kurunegala. You can buy online and we'll be delivered to your door step!</p>
+            <button class="btn btn-dark rounded-pill" style="max-width: fit-content;">Google Map</button>
+        </div>
+        <div class="right">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15849.8831657181!2d79.8993902233843!3d6.712255725342899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae246112e734225%3A0x295149d6183d1535!2sFish-Market!5e0!3m2!1sen!2slk!4v1633342077597!5m2!1sen!2slk" class="rounded-2" width="600" height="400"
+                style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <h3>FAQ</h3>
+    </div>
+
+    <div class="accordion container mb-5 mt-2 gap-3 d-flex flex-column" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Question 1
+            </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>How long will it take to deliver to Kandy?</strong> 
+                    <p>About Four hours</p>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Question 2
+            </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as
+                    the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Question 3
+            </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                    does limit overflow.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h6>About</h6>
+                    <p class="text-justify">Fisheries company</p>
+                    <p class="text-justify">204C, Station road</p>
+                    <p class="text-justify">Panadura, Sri Lanka</p>
+                    <p class="text-justify">+94 451919178</p>
+
+                    <form class="sign-up-form" action="#!">
+                        <input type="text" placeholder="Email" name="email">
+                        <button type="submit">Sign up</button>
+                    </form>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Categories</h6>
+                    <ul class="footer-links">
+                        <li><a href="http://scanfcode.com/category/c-language/">Store</a></li>
+                        <li><a href="http://scanfcode.com/category/front-end-development/">Registration</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="http://scanfcode.com/about/">About Us</a></li>
+                        <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+                        <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+                        <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+                        <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by
+                        <a href="#">Dinuja De Alwis</a>.
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a class="instagram" href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

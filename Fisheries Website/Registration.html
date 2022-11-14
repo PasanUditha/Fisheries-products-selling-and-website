@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+       <!-- CSS only -->
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+       <meta charset="UTF-8">
+       <title>How to Create responsive Homepage</title>
+       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="style.css">
+   
+       <!-- font awesome cdn -->
+       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Registration Form</title>
+   <style type="text/css">
+      * {
+         margin: 0;
+         padding: 0;
+      }
+
+      body {
+
+         background-image: url("o3.gif");
+         margin-top: 40px;
+         background-position: center;
+         background-size: cover;
+         font-family: sans-serif;
+      }
+
+      .regform {
+         width: 800px;
+         height: auto;
+         background-color: rgb(0, 0, 0, 0.6);
+         margin: auto;
+         color: #FFFFFF;
+         padding: 10px 0px 10px 0px;
+         text-align: center;
+         border-radius: 15px 15px 0px 0px;
+      }
+
+      .main {
+         background-color: rgb(0, 0, 0, 0.5);
+         width: 800px;
+         margin: auto;
+      }
+
+      form {
+         padding: 10px;
+         padding-top: 30px;
+
+      }
+
+
+      .name {
+         margin-left: 25px;
+         margin-top: 30px;
+         width: 125px;
+         color: white;
+         font-size: 18px;
+         font-weight: 700;
+      }
+
+      .field {
+         position: relative;
+         left: 200px;
+         top: -37px;
+         line-height: 40px;
+         width: 480px;
+         border-radius: 6px;
+         padding: 0 22px;
+         font-size: 16px;
+         color: #555;
+      }
+
+      .Code {
+         position: relative;
+         left: 200px;
+         top: -37px;
+         line-height: 40px;
+         width: 95px;
+         border-radius: 6px;
+         padding: 0 22px;
+         font-size: 16px;
+         color: #555;
+      }
+
+      .option {
+         position: relative;
+         left: 200px;
+         top: -37px;
+         line-height: 40px;
+         width: 532px;
+         height: 40px;
+         border-radius: 6px;
+         padding: 0 22px;
+         font-size: 16px;
+         color: #555;
+         outline: none;
+         overflow: hidden;
+      }
+
+      .option option {
+         font-size: 20px;
+      }
+
+      #coustomer {
+         margin-left: 25px;
+         color: white;
+         font-size: 18px;
+         margin-top: 15px;
+
+      }
+
+      .radio {
+         display: inline-block;
+         padding-right: 70px;
+         font-size: 25px;
+         margin-left: 25px;
+         margin-top: 15px;
+         color: white;
+      }
+
+      .radio input {
+         width: 20px;
+         height: 20px;
+         border-radius: 50%;
+         cursor: pointer;
+         outline: none;
+      }
+
+      .row {
+         margin-left: 170px;
+      }
+
+      .clear-btn {
+         background-color: #d14137;
+         margin-left: 47%;
+         margin-top: 30px;
+      }
+
+      .submit-btn {
+         background-color: #3BAF9F;
+         margin-top: 30px;
+         float: right;
+         margin-right: 6%;
+      }
+
+      button {
+
+         display: block;
+         margin: 0px 20px 20px 20px;
+         text-align: center;
+         border-radius: 12px;
+         border: 2px solid #366473;
+         padding: 14px 50px;
+         outline: none;
+         color: white;
+         cursor: pointer;
+         transition: 0.25px;
+         font-size: 15px;
+
+         display: inline-block;
+         margin-left: 25px;
+         margin-top: 15px;
+
+
+      }
+
+      button:hover {
+         background-color: #b6c5db;
+         color: #555;
+      }
+   </style>
+
+</head>
+
+<body>
+
+  <header class="container pt-3">
+      <div class="logo text-black">
+          <h3 class="text-black fw-bold">FISHERIES</h3>
+      </div>
+      <ul class="nav-area">
+          <li><a href="Hello.html">Home</a></li>
+          <li><a href="Finz.html">Signup</a></li>
+          <li><a href="shop.html">Store</a></li>
+          <li><a href="NewsPage.html">News</a></li>
+          <li><a href="AboutUS.html">About</a></li>
+          <li><a href="1.html">Chat</a></li>
+          <li><a href="Chatpage.html">Inqueiry</a></li>
+      </ul>
+  </header> 
+   <div class="regform">
+      <h1>Fisheries User Registration</h1>
+   </div>
+
+   <div class="main">
+
+      <form method="POST">
+
+         <h2 class="name">Full Name </h2>
+         <input class="field" type="text" name="fullName">
+
+         <h2 class="name">Address </h2>
+         <input class="field" type="text" name="address">
+
+         <h2 class="name">NIC </h2>
+         <input class="field" type="text" name="nic">
+
+         <h2 class="name">District</h2>
+         <input class="field" type="text" name="dist">
+
+         <h2 class="name">Phone</h2>
+         <input class="field" type="text" name="phone">
+
+         <h2 id="coustomer">Are you a Seller or Customer?</h2>
+
+         <div class="row">
+            <label class="radio">
+               <input class="radio-one" type="radio" checked="checked" name="rdiobtn">
+               <span class="checkmark"></span>
+               Seller
+            </label>
+
+            <label class="radio">
+               <input class="radio-two" type="radio" name="rdiobtn">
+               <span class="checkmark"></span>
+               Customer
+            </label>
+
+         </div>
+
+         <button class="clear-btn" type="reset"><b> Clear All </b></button>
+         <button class="submit-btn" type="submit"><b> Submit </b></button>
+
+      </form>
+   </div>
+</body>
+
+</html>
